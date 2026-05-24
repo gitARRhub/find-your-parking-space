@@ -141,25 +141,6 @@ The source code for the project is included in the `src/` folder.
 
 ---
 
-# 📸 Project Images
-
-## 🏗️ Complete Project Setup
-![Project](images/Project.jpg)
-
-## 🌫️ Air Quality Display
-![Air Quality](images/AirQuality.jpg)
-
-## 🚗 Vehicle Parked Detection
-![Parked](images/Parked.jpg)
-
-## 🅿️ Empty Slot Detection
-![Empty Slot](images/Empty.jpg)
-
-## 🏢 Parking Slots First Floor
-![Parking Floor](images/Parking%20slots%201st%20floor.jpg)
-
----
-
 # 📸 Results
 
 ✅ Detects vehicle presence  
