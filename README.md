@@ -206,5 +206,5 @@ find-your-parking-space/
 │   ├── Parking slots 1st floor.jpg
 │   └── Project.jpg
 │
-├── docs/
-│   └── Find Your Parking Space.pptx
+└── docs/
+    └── Find Your Parking Space.pptx
