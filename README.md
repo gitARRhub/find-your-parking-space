@@ -12,10 +12,10 @@ The system continuously monitors parking spaces using sensors and displays wheth
 
 ✨ The project uses:
 - ⚡ Arduino UNO
-- 📡 IR Sensors / Ultrasonic Sensors
-- 💡 LEDs
-- 📟 LCD Display
-- 🔔 Buzzer (optional)
+- 📡 Sensors
+- 🔄 Servo Motor
+- 📟 LCD Displays
+- 🔔 Buzzer
 
 🎯 The main objective of this project is to provide a low-cost and efficient smart parking solution.
 
@@ -27,69 +27,57 @@ The system continuously monitors parking spaces using sensors and displays wheth
 ✅ Reduce parking search time  
 ✅ Display parking slot status  
 ✅ Improve parking management  
-✅ Provide a low-cost smart parking solution  
+✅ Provide an automated parking guidance system  
 
 ---
 
 # ✨ Features
 
 🚗 Real-time parking slot detection  
-💡 LED indication for slot availability  
-📟 LCD display output  
+📟 Parking slot display system  
+🔄 Automatic gate control using servo motor  
 🔔 Alert indication system  
 ⚡ Low power consumption  
-💰 Low-cost implementation  
+💰 Cost-effective implementation  
 🛠️ Easy installation and maintenance  
-
----
-
-# 🧰 Components Used
-
-| 🔩 Component | 🔢 Quantity |
-|---|---|
-| ⚡ Arduino UNO | 1 |
-| 📡 IR Sensors / Ultrasonic Sensors | Multiple |
-| 📟 LCD Display | 1 |
-| 💡 LEDs | Multiple |
-| 🔔 Buzzer | 1 |
-| 🔌 Breadboard | 1 |
-| 🔗 Jumper Wires | Multiple |
-| 🔋 Power Supply | 1 |
 
 ---
 
 # ⚙️ Working Principle
 
-📡 Sensors are placed at each parking slot to detect whether a vehicle is present.
+📡 Sensors are placed at parking slots to detect vehicle presence.
 
 🚗 When a vehicle occupies a parking slot:
-- 🔴 Red LED turns ON
-- Slot is marked as occupied
+- Slot status changes to occupied
+- Parking availability gets updated on the display
 
 ✅ When the slot is empty:
-- 🟢 Green LED turns ON
-- Slot is marked as available
+- Slot status changes to available
 
-📟 The LCD display shows:
-- Total parking slots
-- Available slots
-- Occupied slots
+📟 LCD displays show:
+- Available parking slots
+- Occupied parking slots
+- Parking floor information
 
-🔔 Optional buzzer alerts can also be implemented for vehicle entry and exit notifications.
+🔄 Servo motor is used for:
+- Automatic gate opening
+- Automatic gate closing
+
+🔔 Buzzer provides alert indications during parking operations.
 
 ---
 
 # 🧱 Block Diagram
 
 ## 📥 Input Section
-- 📡 IR Sensors / Ultrasonic Sensors
+- 📡 Parking Sensors
 
 ## 🧠 Processing Section
 - ⚡ Arduino UNO
 
 ## 📤 Output Section
-- 📟 LCD Display
-- 💡 LEDs
+- 📟 LCD Displays
+- 🔄 Servo Motor
 - 🔔 Buzzer
 
 ---
@@ -101,26 +89,23 @@ Main controller used to process sensor data and control outputs.
 
 ---
 
-## 📡 IR / Ultrasonic Sensors
-Used for vehicle detection in parking slots.
+## 📡 Sensors
+Used for detecting vehicle presence in parking slots.
 
 ---
 
-## 📟 LCD Display
+## 🔄 Servo Motor
+Used for automatic gate opening and closing.
+
+---
+
+## 📟 LCD Displays
 Displays parking slot information and availability status.
 
 ---
 
-## 💡 LEDs
-Used for visual indication of slot status.
-
-🟢 Green LED → Slot Available  
-🔴 Red LED → Slot Occupied  
-
----
-
 ## 🔔 Buzzer
-Used for alert indications (optional).
+Used for alert indications.
 
 ---
 
@@ -149,8 +134,27 @@ The source code for the project is included in the `src/` folder.
 - 📡 Parking slot sensing
 - 🚗 Vehicle detection
 - 📟 LCD interfacing
-- 💡 LED indication system
+- 🔄 Servo motor control
 - 🔔 Alert system
+
+---
+
+# 📸 Project Images
+
+## 🏗️ Complete Project Setup
+![Project](images/Project.jpg)
+
+## 🌫️ Air Quality Display
+![Air Quality](images/AirQuality.jpg)
+
+## 🚗 Vehicle Parked Detection
+![Parked](images/Parked.jpg)
+
+## 🅿️ Empty Slot Detection
+![Empty Slot](images/Empty.jpg)
+
+## 🏢 Parking Slots First Floor
+![Parking Floor](images/Parking%20slots%201st%20floor.jpg)
 
 ---
 
@@ -158,7 +162,7 @@ The source code for the project is included in the `src/` folder.
 
 ✅ Detects vehicle presence  
 ✅ Displays available parking spaces  
-✅ Indicates slot status using LEDs  
+✅ Controls gate automatically using servo motor  
 ✅ Reduces parking search time  
 ✅ Provides efficient parking management  
 
@@ -191,14 +195,14 @@ The source code for the project is included in the `src/` folder.
 | 🧩 Component | 💵 Cost |
 |---|---|
 | ⚡ Arduino UNO | ₹800 |
-| 📡 Sensors | ₹300 |
-| 📟 LCD Display | ₹100 |
-| 💡 LEDs | ₹50 |
-| 🔔 Buzzer | ₹10 |
-| 🔌 Breadboard | ₹50 |
-| 🔧 Other Components | ₹100 |
+| 📡 Sensors | ₹500 |
+| 🔄 Servo Motor | ₹150 |
+| 📟 LCD Displays (2) | ₹600 |
+| 🔔 Buzzer | ₹20 |
+| 🔌 Breadboard | ₹80 |
+| 🛠️ Other Materials (Cardboard, Charts, Thermocol, Gum, etc.) | ₹1800 Approx. |
 
-# 💸 Total Cost: ₹1400 Approx.
+# 💸 Total Cost: ₹4000 Approx.
 
 ---
 
@@ -208,20 +212,16 @@ The source code for the project is included in the `src/` folder.
 find-your-parking-space/
 │
 ├── README.md
+│
 ├── src/
 │   └── code.ino
 │
 ├── images/
-│   ├── complete_setup.jpg
-│   ├── parking_detection.jpg
-│   ├── lcd_display.jpg
-│   └── slot_indication.jpg
-│
-├── circuit_diagram/
-│   └── circuit.png
+│   ├── AirQuality.jpg
+│   ├── Empty.jpg
+│   ├── Parked.jpg
+│   ├── Parking slots 1st floor.jpg
+│   └── Project.jpg
 │
 ├── docs/
-│   └── project_report.pdf
-│
-└── components/
-    └── components_list.txt
+│   └── Find Your Parking Space.pptx
