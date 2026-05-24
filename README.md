@@ -70,7 +70,9 @@ The system continuously monitors parking spaces using sensors and displays wheth
 # 🧱 Block Diagram
 
 ## 📥 Input Section
-- 📡 Parking Sensors
+- 📡 MQ7 Gas Sensor
+- 🌫️ MQ135 Air Quality Sensor
+- 🚗 Parking Sensors
 
 ## 🧠 Processing Section
 - ⚡ Arduino UNO
